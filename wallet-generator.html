@@ -101,8 +101,8 @@ function setCryptoCurrency(toThis) {
 	  break;
 	case 'PURE':
 		window.networkVersion = 0x37;
-		window.privateKeyPrefix = 0xB7;
-		window.WIFPrefix = '7';
+		window.privateKeyPrefix = 0x99;
+		window.WIFPrefix = '6';
 		window.compressedWIFPrefix = 'P';
 		document.title = 'PURE paper wallet generator';
 		break;
@@ -148,6 +148,7 @@ window.suppliesURL = 'none' + myDesign + '#purchase';
 switch (myDesign) {
     case 'alt-PURE':
 		setCryptoCurrency('PURE');
+		break;
 	case 'alt-litecoin':
 		setCryptoCurrency('Litecoin');
 		break;
